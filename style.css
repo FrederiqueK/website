@@ -1,18 +1,24 @@
 /* Basislayout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    background-image: url("afbeeldingen/prikbord-achtergrond.png");
+}
 
 html, body {
     height: 100%;
     padding: 0;
-    background-color: #EEEEEE;  
-    
     color: #303030;
     font: Verdana, Arial, Sans-Serif;
 }
 
-
 main {
     margin: 0 auto;
-    width: 700px;
+    width: 875px;
     position: relative;
 }
 
@@ -21,12 +27,42 @@ article {
     text-align: justify;
 }
 
-
 header {
-    color: skyblue;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
+    border: 1px solid black;
 }
 
+.website-inhoud {
+    background: url() no-repeat;
+    background-size: cover;
+}
+
+.tweede {
+    text-align: center;
+    font-family: Courier, monospace;
+    font-style: italic;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 8px;
+    position: relative;
+    top: -80px;
+    z-index: 2;
+}
+
+
+.eerste {
+    left: -10px;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 70px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0px 0px 0 rgb(14, 66, 27),1px 1px 0 rgb(119, 233, 93),2px 2px 0 rgb(100, 185, 86),3px 3px 0 rgb(101, 165, 76),4px 4px 0 rgb(75, 168, 67),5px 5px 0 rgb(87, 143, 54),6px 6px 0 rgb(70, 117, 42),7px 7px 0 rgb(38, 92, 34),8px 8px 0 rgb(40, 107, 38),9px 9px 0 rgb(31, 77, 30),10px 10px 0 rgb(19, 61, 21),11px 11px 0 rgb(28, 56, 16),12px 12px 0 rgb(11, 39, 14),13px 13px 0 rgb(11, 32, 8),14px 14px 0 rgb(4, 20, 5),15px 15px 0 rgba(0,0,0,1),21px 21px 1px rgba(0,0,0,0.5),0px 0px 20px rgba(0,0,0,.2);
+    
+
+}
 
 footer {
     text-align: center;
@@ -35,11 +71,6 @@ footer {
 
 
 /* specifieke stijlen */
-
-img.zweefLinks {
-    float: left;
-    margin-right: 15px;
-}
 
 .smalltext {
     font-size: 0.7em;
@@ -50,18 +81,16 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 
 /* navigatiebalk */
+
 nav ul {
     list-style-type: none;
     margin: auto;
     padding: 0;
-    background-color: #dddddd;
     overflow: hidden;
+    border-radius: 25px;
+    background: rgb(100, 185, 86);
 }
 
 nav ul li {
@@ -77,13 +106,19 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #aaaaaa;
+    background-color: rgb(82, 109, 74)
 }
 
 nav li a.active {
-    background-color: skyblue;
+    background-color: rgb(21, 41, 21);
 }
 
+.sub-menu {
+   position: absolute;
+   display:none;
+   background-color: rgb(101, 165, 76);
+}
 
-
-
+.nav-menu ul li:hover > ul {
+   display:block;
+}
