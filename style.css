@@ -5,15 +5,12 @@
   box-sizing: border-box;
 }
 
-html {
-    background-image: url("afbeeldingen/prikbord-achtergrond.png");
-}
-
 html, body {
     height: 100%;
     padding: 0;
     color: #303030;
     font: Verdana, Arial, Sans-Serif;
+     background-image: url("afbeeldingen/prikbord-achtergrond.png");
 }
 
 main {
@@ -43,7 +40,7 @@ header {
     text-align: center;
     font-family: Courier, monospace;
     font-style: italic;
-    font-size: 23px;
+    font-size: 24px;
     color: rgb(255, 255, 255);
     letter-spacing: 8px;
     position: relative;
@@ -87,7 +84,7 @@ a {
 nav ul {
     list-style-type: none;
     margin: auto;
-    padding: 0;
+    padding: 0px;
     overflow: hidden;
     border-radius: 25px;
     background: rgb(100, 185, 86);
@@ -111,6 +108,10 @@ nav li a:hover {
 
 nav li a.active {
     background-color: rgb(21, 41, 21);
+}
+
+nav ul li ul li {
+    width: 100px;
 }
 
 .sub-menu {
